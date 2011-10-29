@@ -1,0 +1,5 @@
+node-jsdom (0.2.8+dfsg1-1) UNRELEASED; urgency=low
+
+  * Initial release
+
+ -- David Paleino <dapal@debian.org>  Sat, 29 Oct 2011 18:01:45 +0200

@@ -1,0 +1,28 @@
+From: David Paleino <dapal@debian.org>
+Subject: don't require package.json
+Origin: vendor
+Forwarded: no
+
+---
+ lib/jsdom.js |    3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+--- node-jsdom.orig/lib/jsdom.js
++++ node-jsdom/lib/jsdom.js
+@@ -2,7 +2,6 @@
+ var dom      = exports.dom = require("./jsdom/level3/index").dom,
+     features = require('./jsdom/browser/documentfeatures'),
+     fs       = require("fs"),
+-    pkg      = JSON.parse(fs.readFileSync(__dirname + "/../package.json")),
+     request  = require('request'),
+     URL      = require('url');
+ 
+@@ -28,7 +27,7 @@ exports.debugMode = false;
+ var createWindow = exports.createWindow = require("./jsdom/browser/index").createWindow;
+ 
+ exports.__defineGetter__('version', function() {
+-  return pkg.version;
++  return '0.2.8';
+ });
+ 
+ exports.level = function (level, feature) {

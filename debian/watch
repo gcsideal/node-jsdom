@@ -1,0 +1,4 @@
+version=3
+opts=dversionmangle=s/\+dfsg\d// \
+https://alioth.debian.org/~dapal/npmjs.php?id=jsdom \
+	http://registry.npmjs.org/jsdom/-/jsdom-(\d+.*)\.tgz

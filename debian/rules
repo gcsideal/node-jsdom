@@ -1,0 +1,30 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+UPVER := $(shell dpkg-parsechangelog | grep ^Version | cut -d\  -f2 | cut -d- -f1 | cut -d+ -f1)
+
+%:
+	dh $@
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod a-x $(CURDIR)/debian/node-jsdom/usr/lib/nodejs/jsdom/selectors/sizzle.js
+
+get-orig-source:
+	uscan \
+		--verbose \
+		--download-version $(UPVER) \
+		--force-download \
+		--destdir . \
+		--rename
+	tar xf node-jsdom_$(UPVER).orig.tar.gz
+	@echo Removing minified jQuery
+	@rm -rf package/example/jquery/
+	@echo Removing tests, since the W3C testsuite is under a non-free license
+	@rm -rf package/test/
+	tar cf node-jsdom_$(UPVER)+dfsg1.orig.tar package/
+	gzip -9 node-jsdom_$(UPVER)+dfsg1.orig.tar
+	rm -rf node-jsdom_$(UPVER).orig.tar.gz package/
