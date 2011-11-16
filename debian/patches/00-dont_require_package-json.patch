@@ -9,7 +9,7 @@ Forwarded: no
 
 --- node-jsdom.orig/lib/jsdom.js
 +++ node-jsdom/lib/jsdom.js
-@@ -2,7 +2,6 @@
+@@ -1,7 +1,6 @@
  var dom      = exports.dom = require("./jsdom/level3/index").dom,
      features = require('./jsdom/browser/documentfeatures'),
      fs       = require("fs"),
@@ -17,7 +17,7 @@ Forwarded: no
      request  = require('request'),
      URL      = require('url');
  
-@@ -28,7 +27,7 @@ exports.debugMode = false;
+@@ -27,7 +26,7 @@ exports.debugMode = false;
  var createWindow = exports.createWindow = require("./jsdom/browser/index").createWindow;
  
  exports.__defineGetter__('version', function() {
