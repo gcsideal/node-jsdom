@@ -1,6 +1,6 @@
 {
     "name": "jsdom",
-    "version": "0.2.10",
+    "version": "0.2.13",
     "description": "A javascript implementation of the W3C DOM",
     "keywords": [
       "dom",
@@ -123,6 +123,10 @@
         "name" : "Chris Roebuck",
         "email" : "chris@quillu.com",
         "url" : "http://www.quillu.com"
+      },
+      {
+        "name" : "Avi Deitcher",
+        "url" : "https://github.com/deitch"
       }
     ],
     "bugs": {
@@ -148,7 +152,10 @@
        "htmlparser" : "1.x",
        "request"    : "2.x",
        "cssom"      : "0.2.x",
-       "contextify" : "0.0.x"
+       "contextify" : "0.1.x"
+    },
+    "optionalDependencies": {
+       "contextify" : "0.1.x"
     },
     "devDependencies" : {
       "nodeunit" : ">=0.5.x",
