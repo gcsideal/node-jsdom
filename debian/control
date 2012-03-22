@@ -4,7 +4,7 @@ Priority: extra
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: David Paleino <dapal@debian.org>
 Build-Depends: debhelper (>= 8~)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: https://github.com/tmpvar/jsdom
 Vcs-Git: git://git.debian.org/collab-maint/node-jsdom.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/node-jsdom.git;a=summary

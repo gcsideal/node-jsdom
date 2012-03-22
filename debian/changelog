@@ -1,8 +1,9 @@
 node-jsdom (0.2.13+dfsg1-1) UNRELEASED; urgency=low
 
   * New upstream version
+  * Standards Version bump to 3.9.3, no changes needed
 
- -- David Paleino <dapal@debian.org>  Thu, 22 Mar 2012 22:01:30 +0100
+ -- David Paleino <dapal@debian.org>  Thu, 22 Mar 2012 22:01:44 +0100
 
 node-jsdom (0.2.10+dfsg1-1) unstable; urgency=low
 
