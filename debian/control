@@ -17,7 +17,7 @@ Depends:
  , node-htmlparser
  , node-cssom
  , node-request
- , node-contextify
+ , node-contextify (>= 0.1)
 Description: javascript implementation of the W3C DOM
  node-jsdom is a CommonJS implementation of the DOM, intended to be platform
  independent and as minimal/light as possible, while completely adhering to
