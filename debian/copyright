@@ -1,11 +1,11 @@
-Format: http://dep.debian.net/deps/dep5
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 
 Files: *
 Copyright: © 2010, Elijah Insua <tmpvar@gmail.com>
 License: MIT
 
 Files: debian/*
-Copyright: © 2011, David Paleino <dapal@debian.org>
+Copyright: © 2011-2012, David Paleino <dapal@debian.org>
 License: MIT
 
 Files: example/ender/*
